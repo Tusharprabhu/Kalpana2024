@@ -7,7 +7,7 @@ import AuthContext from "../context/AuthContext";
 
 const Navbar = (props) => {
     const s1 =
-        "bg-white-900 drop-shadow-lg mx-3 px-7 py-2 rounded-md text-base font-medium hover:drop-shadow-xl hover:px-10 dark:hover:bg-midnight dark:hover:drop-shadow-dark-lg";
+        "bg-gray-darkest text-white-900 drop-shadow-lg mx-3 px-7 py-2 rounded-md text-base font-medium hover:drop-shadow-xl hover:px-10 hover:bg-red transition-all duration-300";
     const [theme, setTheme] = useState(0);
     const { getLoggedIn } = useContext(AuthContext);
     const doc = document.documentElement.classList;
@@ -24,18 +24,18 @@ const Navbar = (props) => {
     }, []);
     return (
         <>
-            <nav className="p-3 bg-white-900 sticky top-0 z-10 dark:bg-gray-bg">
+            <nav className="p-3 bg-gray-bg shadow-lg sticky top-0 z-10 border-b border-gray-dark">
                 <div className="flex items-center justify-between">
                     <Link to="/">
-                        <div className="flex items-center justify-between">
+                        <div className="flex items-center justify-between group">
                             <img
                                 className="h-14 w-auto ml-6"
                                 src={logo}
                                 draggable={false}
                                 alt="Your Company"
                             />
-                            <div className="text-2xl font-bold ml-2 text-blood">
-                                BloodLink
+                            <div className="text-2xl font-bold ml-2 text-darkred group-hover:text-red transition-colors duration-300">
+                                Bloodconnect
                             </div>
                         </div>
                     </Link>
@@ -68,26 +68,6 @@ const Navbar = (props) => {
                                     <DropDown title="Blood Bank Login" children={["Login", "Add Your Bloodbank"]} links={["/login/bank", "/register/bank"]}></DropDown>
                                 </>
                             )}
-                            <button
-                                className="mx-2 px-3 py-2 rounded-full hover:shadow-lg"
-                                onClick={() => {
-                                    localStorage.setItem(
-                                        "theme",
-                                        localStorage.getItem("theme") == 1 ? 0 : 1
-                                    );
-                                    setTheme(localStorage.getItem("theme"));
-                                    if (theme == 0) {
-                                        doc.add("dark");
-                                    } else {
-                                        doc.remove("dark");
-                                    }
-                                }}
-                            >
-                                <i
-                                    className={`dark:text-white-900 fa-solid fa-lg fa-${theme == 0 ? "sun" : "moon"
-                                        }`}
-                                ></i>
-                            </button>
                         </>
                     </div>
                 </div>
