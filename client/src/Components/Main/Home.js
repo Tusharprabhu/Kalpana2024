@@ -24,8 +24,8 @@ const Home = () => {
         { title: "Save Life", img: g4 },
     ]
     return (
-        <div className="bg-gray-bg text-white-900">
-            <div className="relative bg-gray-darkest">
+        <div className="bg-rose-200 text-gray-800 min-h-screen">
+            <div className="relative bg-rose-300">
                 <img className="w-full" src={bg} alt="" />
             </div>
             <div className='grid grid-cols-2 place-items-center mt-6 px-52'>
@@ -33,35 +33,35 @@ const Home = () => {
                     <img draggable={false} className="w-full rounded-lg shadow-lg" src={bg2} alt="" />
                 </div>
                 <div>
-                    <p className='text-center font-bold text-4xl text-white-900'>
+                    <p className='text-center font-bold text-4xl text-gray-800'>
                         Be the reason <br />for <br />someone's heartbeat
                     </p>
                 </div>
             </div>
             <h1 className='font-bold text-center text-darkred my-4 text-lg underline'>Learn About Donation</h1>
-            <div className='flex px-20 bg-gray-darkest p-6 rounded-lg mx-4'>
+            <div className='flex px-20 bg-rose-300 p-6 rounded-lg mx-4 shadow-lg'>
                 <div className="flex-1">
                     <img src={donationFact} width="90%" alt="" className="rounded-lg" />
-                    <p className='text-center mt-4 text-gray-light'>
-                        <code className="bg-gray-dark p-2 rounded">After donating blood, the body works to replenish the blood loss. This stimulates the production of new blood cells and in turn, helps in maintaining good health.</code>
+                    <p className='text-center mt-4 text-gray-700'>
+                        <code className="bg-rose-400 text-gray-800 p-2 rounded">After donating blood, the body works to replenish the blood loss. This stimulates the production of new blood cells and in turn, helps in maintaining good health.</code>
                     </p>
                 </div>
                 <div className="flex-1 ml-8">
                     <table className='w-full border-collapse' cellPadding={8}>
                         <tr>
-                            <td colSpan={3} className="border border-gray-dark bg-darkred text-white-900 text-center font-bold p-3">Compatible Blood Type Donors</td>
+                            <td colSpan={3} className="border border-rose-400 bg-darkred text-white-900 text-center font-bold p-3">Compatible Blood Type Donors</td>
                         </tr>
                         <tr>
-                            <th className='border border-gray-dark bg-gray-dark text-white-900 text-lg p-2'>Blood Type</th>
-                            <th className='border border-gray-dark bg-gray-dark text-white-900 text-lg p-2'>Donate Blood To</th>
-                            <th className='border border-gray-dark bg-gray-dark text-white-900 text-lg p-2'>Receive Blood From</th>
+                            <th className='border border-rose-400 bg-rose-400 text-gray-800 text-lg p-2'>Blood Type</th>
+                            <th className='border border-rose-400 bg-rose-400 text-gray-800 text-lg p-2'>Donate Blood To</th>
+                            <th className='border border-rose-400 bg-rose-400 text-gray-800 text-lg p-2'>Receive Blood From</th>
                         </tr>
                         {temp.map((e) => {
                             return (
                                 <tr>
-                                    <td className='border border-gray-dark bg-gray-bg text-white-900 text-lg p-2 text-center'>{e.blood}</td>
-                                    <td className='border border-gray-dark bg-gray-bg text-white-900 text-lg p-2'>{e.donate}</td>
-                                    <td className='border border-gray-dark bg-gray-bg text-white-900 text-lg p-2'>{e.recieve}</td>
+                                    <td className='border border-rose-400 bg-rose-100 text-gray-800 text-lg p-2 text-center'>{e.blood}</td>
+                                    <td className='border border-rose-400 bg-rose-100 text-gray-800 text-lg p-2'>{e.donate}</td>
+                                    <td className='border border-rose-400 bg-rose-100 text-gray-800 text-lg p-2'>{e.recieve}</td>
                                 </tr>
                             )
                         })}
@@ -73,18 +73,18 @@ const Home = () => {
             </p>
             <div className='grid grid-cols-2 place-items-center gap-6 px-8'>
                 {temp2.map((e, i) =>
-                    <div className='border-gray-dark border-2 bg-gray-darkest shadow-lg rounded-lg overflow-hidden max-w-[90%] select-none grid grid-cols-2'>
+                    <div className='border-rose-400 border-2 bg-rose-300 shadow-lg rounded-lg overflow-hidden max-w-[90%] select-none grid grid-cols-2'>
                         <div><img src={e.img} draggable={false} width="100%" alt="" className="h-full object-cover" /></div>
                         <div className='m-4'>
-                            <h1 className='font-bold text-lg text-white-900 mb-2'>{i + 1} - {e.title}</h1>
-                            <p className='text-justify text-gray-light'>Lorem ipsum dolor, sit amet consectetur qwey adipisicing elit. Doloribus, as aliquam corporis dolorem consectetur qui libero, veritatis, nihil alias repellat quam architecto nobis laudantium ipsum nemo nesciunt quisquam est odit ad?</p>
+                            <h1 className='font-bold text-lg text-gray-800 mb-2'>{i + 1} - {e.title}</h1>
+                            <p className='text-justify text-gray-700'>Lorem ipsum dolor, sit amet consectetur qwey adipisicing elit. Doloribus, as aliquam corporis dolorem consectetur qui libero, veritatis, nihil alias repellat quam architecto nobis laudantium ipsum nemo nesciunt quisquam est odit ad?</p>
                         </div>
                     </div>
                 )}
             </div>
             <br />
             <div className='w-full bg-darkred text-white-900 h-max text-sm text-center font-bold py-4'>
-                <code>ॐ Bloodconnect @ {new Date().getFullYear()} ॐ || Made with ❤️ by Ujjwal</code>
+                <code>Blood connect {new Date().getFullYear()} Tusharprabhu</code>
             </div>
         </div>
     )

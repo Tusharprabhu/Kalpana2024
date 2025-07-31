@@ -7,7 +7,7 @@ import AuthContext from "../context/AuthContext";
 
 const Navbar = (props) => {
     const s1 =
-        "bg-gray-darkest text-white-900 drop-shadow-lg mx-3 px-7 py-2 rounded-md text-base font-medium hover:drop-shadow-xl hover:px-10 hover:bg-red transition-all duration-300";
+        "bg-rose-300 text-gray-800 drop-shadow-lg mx-3 px-7 py-2 rounded-md text-base font-medium hover:drop-shadow-xl hover:px-10 hover:bg-red transition-all duration-300";
     const [theme, setTheme] = useState(0);
     const { getLoggedIn } = useContext(AuthContext);
     const doc = document.documentElement.classList;
@@ -24,7 +24,7 @@ const Navbar = (props) => {
     }, []);
     return (
         <>
-            <nav className="p-3 bg-gray-bg shadow-lg sticky top-0 z-10 border-b border-gray-dark">
+            <nav className="p-3 bg-rose-200 shadow-lg sticky top-0 z-10 border-b border-rose-400">
                 <div className="flex items-center justify-between">
                     <Link to="/">
                         <div className="flex items-center justify-between group">
@@ -41,7 +41,7 @@ const Navbar = (props) => {
                     </Link>
                     <div className="flex items-center justify-between">
                         <>
-                            <DropDown title="About Us" children={["Home", "About BloodLink", "Contact Us"]} links={["/", "/about", "/contactUs"]}></DropDown>
+                            <DropDown title="About Us" children={["Home", "About Bloodconnect", "Contact Us"]} links={["/", "/about", "/contactUs"]}></DropDown>
                             {props.logIn ? (
                                 <>
                                     <Link

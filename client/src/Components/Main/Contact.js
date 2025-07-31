@@ -4,34 +4,34 @@ import cc from "../../assets/cc.png"
 const Contact = () => {
     const data = [
         {
-            title: "BloodLink related queries, feedback and suggestions", body: [
-                "Center For Development of Advanced Computing",
-                "C-56/1, Anusandhan Bhawan , Sector-62, Noida, Uttar Pardesh-201307",
+            title: "Tushar related queries, feedback and suggestions", body: [
+                "PES University",
+                "100 Feet Ring Road, BSK III Stage, Bengaluru, Karnataka - 560085",
                 "8527890830",
-                "bloodlink[at]cdac[dot]in"
+                "tushar[at]pes[dot]edu"
             ]
         },
         {
             title: "For Administrative queries", body: [
-                "Blood Cell, National Health Mission",
-                "Ministry of Health & Family Welfare,New Delhi - 110011"
+                "PES University RR Campus",
+                "100 Feet Ring Road, BSK III Stage, Bengaluru, Karnataka - 560085"
             ]
         },
-        { title: "For administrative queries", body: ["Blood Cell, National Health Mission", "Ministry of Health & Family Welfare,New Delhi - 110011"] }
+        { title: "For administrative queries", body: ["PES University RR Campus", "100 Feet Ring Road, BSK III Stage, Bengaluru, Karnataka - 560085"] }
     ];
     return (
-        <div className='px-64'><br />
-            <h1 className='text-center text-3xl font-bold'>Contact Details</h1><br />
+        <div className='px-64 bg-rose-200 text-gray-800 min-h-screen py-8'><br />
+            <h1 className='text-center text-3xl font-bold text-darkred'>Contact Details</h1><br />
             <div className='flex justify-around'>
                 <div>
                     {
                         data.map((e) => {
                             return (
                                 <>
-                                    <p className='text-xl font-bold underline'>{e.title}</p><br />
-                                    <code>
+                                    <p className='text-xl font-bold underline text-darkred'>{e.title}</p><br />
+                                    <code className="bg-rose-300 p-2 rounded">
                                         {e.body.map((k) => {
-                                            return <p className='text-md'>{k}</p>
+                                            return <p className='text-md text-gray-700'>{k}</p>
                                         })}
                                     </code><br />
                                 </>
