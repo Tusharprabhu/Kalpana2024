@@ -5,6 +5,7 @@ const Contact = () => {
     const data = [
         {
             title: "Tushar related queries, feedback and suggestions", body: [
+                "Tushar Prabhu",
                 "PES University",
                 "100 Feet Ring Road, BSK III Stage, Bengaluru, Karnataka - 560085",
                 "8527890830",
