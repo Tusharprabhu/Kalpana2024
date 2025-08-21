@@ -102,3 +102,23 @@ Kalpana2024/
 3. Commit with clear messages
 4. Open a Pull Request describing changes and test steps
 
+
+## More screenshots
+
+<p>
+	<img src="ss/ss1.png" width="49%" alt="ss1"/>
+	<img src="ss/ss2.png" width="49%" alt="ss2"/>
+</p>
+<p>
+	<img src="ss/ss3.png" width="49%" alt="ss3"/>
+	<img src="ss/ss4.png" width="49%" alt="ss4"/>
+</p>
+<p>
+	<img src="ss/ss5.png" width="49%" alt="ss5"/>
+	<img src="ss/ss6.png" width="49%" alt="ss6"/>
+</p>
+<p>
+	<img src="ss/ss7.png" width="49%" alt="ss7"/>
+	<img src="ss/ss8.png" width="49%" alt="ss8"/>
+</p>
+
