@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# downloads / browser temp files
+*.crdownload
+# explicit problematic file (leftover partial download)
+client/src/assets/Unconfirmed 390903.crdownload
