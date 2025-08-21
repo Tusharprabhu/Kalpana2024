@@ -1,16 +1,104 @@
-24-hour hackathon organized by IEEE PESU-ECC Student branch. During the hackathon, we developed a website called Lifeline Connect. This website consists of two phases:
+# Kalpana2024 – Blood Donation Management (Full‑Stack)
 
-Blood Donation Phase: In this phase, we acted as an intermediary between hospitals, blood banks, and donors. Our aim was to create a platform similar to Swiggy or Zomato but for blood. We facilitated the process of finding nearby blood banks during emergencies and organized blood donation camps to encourage people to donate blood.
+A full‑stack application to connect blood donors, blood banks, and the community. It provides user and bank portals, blood stock management, donation/request workflows, and blood donation camp management.
 
-Consultancy Model: The second phase of our website involves a consultancy model. Here, users can input their medical reports, and the system generates a brief summary for doctors to review. Our future plan involves training a machine learning model to enhance this feature. This ML model would not only provide summaries of medical reports but also detect diseases, aiming for higher accuracy and efficiency.
+## What it is
 
-Overall, our experience at the hackathon was both challenging and rewarding, and we are excited about the potential impact of Lifeline Connect in the healthcare industry
-<img width="960" alt="image" src="https://github.com/Yashcodes04/kalpana-24/assets/143002423/fc9f67a2-1035-4f71-9cd5-bc92af00b12b">
-<img width="960" alt="image" src="https://github.com/Yashcodes04/kalpana-24/assets/143002423/629dba40-f800-4653-9186-647f1c10f96e">
-<img width="960" alt="image" src="https://github.com/Yashcodes04/kalpana-24/assets/143002423/255c48fd-6f85-4f2a-971a-4f106fa76e37">
-<img width="960" alt="image" src="https://github.com/Yashcodes04/kalpana-24/assets/143002423/22a7813e-7127-446d-bda9-29fda840c1a4">
-<img width="960" alt="image" src="https://github.com/Yashcodes04/kalpana-24/assets/143002423/a91c2072-d720-4702-b0cf-f07c26d186c1">
-<img width="960" alt="image" src="https://github.com/Yashcodes04/kalpana-24/assets/143002423/de2e2504-0cf3-4e8c-b1bd-3585698a88a1">
-<img width="960" alt="image" src="https://github.com/Yashcodes04/kalpana-24/assets/143002423/f9ef2f8c-1330-4af2-854b-22a398809ec9">
+A community-first platform that connects people who need blood with blood banks and donors, while making it simple to organize, discover, and participate in blood donation camps. It streamlines the journey—from a person requesting blood to a bank fulfilling it, and from a donor’s intent to a completed donation.
 
+## Motive
+
+- Save lives by reducing the time it takes to find and receive the right blood.
+- Make donating blood easy, rewarding, and recurring.
+- Help blood banks predict demand, avoid stockouts, and reduce wastage.
+- Build trust and transparency across donors, recipients, banks, and organizers.
+
+## Who it’s for
+
+- People seeking blood (patients/caregivers) who need quick access and clarity.
+- Donors who want convenient ways to contribute and track their impact.
+- Blood banks and hospitals needing better visibility, workflows, and planning.
+- Organizers/NGOs running donation camps and aiming for higher turnout and efficiency.
+- Communities and authorities working toward emergency readiness.
+
+## What it does
+
+- For recipients: search nearby banks, view details, submit requests, and track status.
+- For donors: discover camps, register in one click, and track donation history.
+- For blood banks: manage stock, act on requests/donations, create/manage camps, confirm donor participation.
+- For communities: centralized, transparent information that reduces friction and panic during crises.
+
+## Outcomes
+
+- Faster time‑to‑blood for patients.
+- Higher donor retention and camp turnout.
+- Fewer stockouts and lower wastage through better planning.
+- Stronger trust via clear status tracking and accountability.
+
+## Principles
+
+- Accessibility: simple, focused flows for all users.
+- Privacy & safety: sensitive actions protected without unnecessary friction.
+- Inclusivity: regional awareness (states/districts) and community needs.
+- Transparency: clear statuses and histories for requests, donations, and camps.
+
+## Vision
+
+- Real‑time availability and smart matching by location and urgency.
+- Emergency alerts and rapid mobilization during disasters.
+- Integrations with hospitals and public health systems.
+- Multilingual and offline‑friendly experiences to reach everyone.
+
+## Features
+
+- User portal
+	- Register/login, edit profile
+	- Request blood and donate blood
+	- Browse banks by state/district
+	- Discover and register for blood donation camps
+	- View history of requests and donations
+- Blood bank portal
+	- Manage bank profile
+	- Manage stock by blood group (A+/−, B+/−, AB+/−, O+/−)
+	- Review and update status of user requests and donations
+	- Create/manage donation camps, confirm donor participation
+- General
+	- JWT auth via HTTP‑only cookies
+	- Responsive UI with Tailwind CSS
+	- REST API with MongoDB persistence
+
+## Tech stack
+
+- Frontend: React 18, React Router 6, Tailwind CSS
+- Backend: Node.js, Express, Mongoose (MongoDB)
+- Auth: JSON Web Tokens (JWT) via http‑only cookie
+- Misc: Axios, CORS, dotenv, cookie‑parser
+
+## Directory structure
+```
+Kalpana2024/
+├─ backend/                 # Express API
+│  ├─ app.js                # Server entry (port 3177)
+│  ├─ models/models.js      # Mongoose schemas & models
+│  ├─ routers/              # auth, user, bank, camp routers
+│  ├─ middleware/auth.js    # JWT cookie auth middleware
+│  ├─ package.json
+│  └─ .env                  # Environment (not committed)
+├─ client/                  # React app (CRA)
+│  ├─ src/
+│  │  ├─ App.js             # App routes & layout
+│  │  ├─ Components/        # UI (User, Bank, Main, Auth, Util)
+│  │  └─ assets/            # Images + data.json
+│  ├─ public/
+│  ├─ tailwind.config.js
+│  └─ package.json
+└─ ss/                      # Screenshots
+```
+\
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feat/your-feature`
+3. Commit with clear messages
+4. Open a Pull Request describing changes and test steps
 
